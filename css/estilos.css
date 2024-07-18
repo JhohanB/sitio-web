@@ -5,7 +5,8 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(189, 182, 182);
+    font-size: 20px;
 }
 
 img {
@@ -107,12 +108,13 @@ nav .carrito a span {
 }
 
 .carrusel {
-    margin: 70px 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
     text-align: center;
 }
 
 .slider {
-    width: 60%;
+    width: 80%;
     height: auto;
     margin: auto;
     overflow: hidden;
@@ -130,10 +132,6 @@ nav .carrito a span {
     width: 200px;
 }
 
-.slider .slide img {
-    width: 100%;
-}
-
 @keyframes scroll {
     0% {
         -webkit-transform: translate(0);
@@ -145,15 +143,110 @@ nav .carrito a span {
     }
 }
 
-.bienvenida {
-    font-size: 35px;
+.btn {
+    display: inline-block;
+    background: rgb(85, 84, 84);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background: gray;
+}
+
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.banner-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.banner-content h1 {
+    margin: 10px 0;
+    font-size: 40px;
+}
+
+.productos-destacados {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.productos-destacados h2 {
     margin-bottom: 20px;
 }
 
-.introduccion {
-    font-size: 20px;
-    width: 60%;
+.producto {
+    display: inline-block;
+    width: 300px;
+    background-color: white;
     margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.producto .btn {
+    background-color: rgb(6, 148, 6);
+}
+
+.producto .btn:hover {
+    background-color: green;
+}
+
+.testimonios {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.testimonios h2 {
+    margin: 20px 0;
+}
+
+.testimonial {
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.categorias {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.categoria {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+}
+
+.categoria a {
+    color: black;
+    text-decoration: none;
+}
+
+.categoria a:hover {
+    text-decoration: underline;
+}
+
+.contactanos {
+    padding: 3em 0;
+    text-align: center;
+}
+
+.contactanos h2 {
+    margin: 20px 0;
 }
 
 .cart {
@@ -238,7 +331,6 @@ nav .carrito a span {
     background-color: green;
 }
 
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -253,10 +345,16 @@ nav .carrito a span {
     font-size: 30px;
 }
 
+.galeria h3 {
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+}
+
 .artwork {
     width: 300px;
     background-color: white;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -293,18 +391,78 @@ nav .carrito a span {
     background-color: green;
 }
 
-.contacto h2, .correo {
-    text-align: left;
-    margin: 80px auto 40px 120px;
-    width: 60%;
-    font-size: 50px;
+.contacto .btn {
+    display: inline-block;
+    background: rgb(85, 84, 84);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.contacto .correo {
-    font-size: 30px;
-    margin-top: 0;
-    color: blueviolet;
-    margin-bottom: 150px;
+.contacto .btn:hover {
+    background: gray;
+}
+
+.contacto {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%;
+    margin: 30px auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.contacto h2 {
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    margin-bottom: 20px;
+}
+
+.contacto-formulario {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control input, .form-control textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.form-control textarea {
+    resize: vertical;
+}
+
+.contacto-info {
+    text-align: center;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.contacto-info p {
+    margin-bottom: 10px;
 }
 
 .obra {
@@ -324,7 +482,6 @@ nav .carrito a span {
 }
 
 .obra-image img {
-    max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
@@ -379,25 +536,12 @@ footer .social-links a {
     font-size: 30px;
 }
 
-.flecha{
-    box-shadow: 0px 0px 5px 5px black;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: rgb(238, 130, 238);
-    font-size: 2em;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.flecha a{
-    color: black;
-    margin-top: 20px;
-}
-
 @media screen and (max-width: 760px) {
+
+    body {
+        font-size: medium;
+    }
+
     .menu-items {
         flex-direction: column; 
         display: none; 
@@ -417,10 +561,6 @@ footer .social-links a {
 
     .col-logo img {
         display: none;
-    }
-
-    main {
-        padding: 0 10px;
     }
 
     .cart-item {
@@ -448,8 +588,28 @@ footer .social-links a {
     }
 
     .artwork {
-        width: 100%;
-        max-width: 400px;
+        width: 250px;
+    }
+
+    .producto {
+        width: 250px;
+    }
+
+    .contacto-formulario {
+        width: 50%;
+    }
+
+    .contacto .btn {
+        padding: 10px 10px;
+    }
+
+    .obra {
+        flex-direction: column;
+    }
+
+    .contacto p {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 }
